@@ -12,7 +12,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('dashboard', function () {
-    return view("inicio_autententicado"); //Inertia::render('Dashboard');
+    return view("inicio_autenticado"); //Inertia::render('Dashboard');
 })->middleware(['auth', 'verified']); //->name('dashboard');
 
 require __DIR__.'/settings.php';
