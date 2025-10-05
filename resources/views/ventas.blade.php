@@ -5,11 +5,11 @@
 @section('contenido2')
 <h1>Lista de Ventas</h1>
     <hr>
-    {{-- <ul>
-        @foreach ($clientes as $customer)             
-        <li>{{$customer->customer_id}} {{$customer->first_name}}</li>
+    <ul>
+        @foreach ($ventas as $venta)             
+        <li>{{$venta->id}} {{$venta->cliente_id}} {{$venta->descripcion}} {{$venta->fecha}}</li>
         @endforeach
     </ul>
-    {{$clientes->links()}} --}}
+    {{$ventas->links()}}
 @endsection 
 

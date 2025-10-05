@@ -24,17 +24,17 @@
                 >
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/acerca" aria-current="page"
+                <a class="nav-link active" href="acercade" aria-current="page"
                     >Acerca de <span class="visually-hidden">(current)</span></a
                 >
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/contacto" aria-current="page"
+                <a class="nav-link active" href="contacto" aria-current="page"
                     >Contactanos <span class="visually-hidden">(current)</span></a
                 >
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/ayuda" aria-current="page"
+                <a class="nav-link active" href="ayuda" aria-current="page"
                     >Ayuda <span class="visually-hidden">(current)</span></a
                 >
             </li>
