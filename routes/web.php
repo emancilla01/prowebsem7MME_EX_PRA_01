@@ -5,18 +5,28 @@ use Inertia\Inertia;
 
 
 Route::get('/prueba', function () {
-    return view('inicio');
+    return view('inicio2');
 });
 
 Route::get('/', function () {
-    return Inertia::render('Welcome');
+    return view('inicio');
 })->name('home');
 
-Route::get('dashboard', function () {
-    return view("inicio_autenticado"); //Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 
+// original
+// Route::get('/', function () {
+//     return Inertia::render('Welcome');
+// })->name('home');
+
+// Route::get('dashboard', function () {
+//     return view("inicio_autenticado"); //Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('clientes',function() {
+    
+    return view('clientes');
+});
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
