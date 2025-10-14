@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    @vite(['resources/js/app2.ts'])
+    @vite(['resources/js/app.ts'])
 </head>
 <body>
-    <div class="row">
+    
+    <div class="container">
+        
+        <div class="row">
             <div class="col">
                 @yield('menu')
             </div>
         </div>
-    <div class="container">
-        {{-- <div class="row">
-            <div class="col">
-                Sistema de Autos
-            </div>
-        </div> --}}
-        
         <div class="row">
             <div class="col">
                 @yield('contenido')
@@ -35,7 +31,7 @@
                 <a href="https://vitejs.dev" target="_blank"> - VITE</a>
             </span>
         </div>
-    </nav>
+        </nav>
     </div>
 </body>
 </html>
