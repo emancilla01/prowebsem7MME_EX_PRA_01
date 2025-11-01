@@ -8,13 +8,13 @@
 </head>
 <body>
     
-    <div class="container">
+    
         <div class="row">
             <div class="col">
                 @yield('menu')
             </div>
         </div>
-                
+    <div class="container">            
         <div class="row">
             <div class="col">
                 @yield('contenido')
