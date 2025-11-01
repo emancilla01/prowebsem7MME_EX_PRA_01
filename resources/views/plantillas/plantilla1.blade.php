@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    @vite(['resources/js/app.ts'])
+    @vite(['resources/js/app2.ts'])
 </head>
 <body>
     
-    <div class="container">
+    
         
         <div class="row">
             <div class="col">
                 @yield('menu')
             </div>
         </div>
+        <div class="container">
         <div class="row">
             <div class="col">
                 @yield('contenido')
