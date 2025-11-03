@@ -1,7 +1,7 @@
 <nav
     class="navbar navbar-expand-sm navbar-dark bg-primary"
    >
-    <a class="navbar-brand" href="#">Comercializadora</a>
+    <a class="navbar-brand" href="#"></a>
     {{-- <button
         class="navbar-toggler d-lg-none"
         type="button"
@@ -13,7 +13,7 @@
     ></button> --}}
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link active" href="clientes" aria-current="page"
                     >Clientes <span class="visually-hidden">(current)</span></a
                 >
@@ -37,7 +37,7 @@
                 <a class="nav-link active" href="proveedores" aria-current="page"
                     >Proveedores <span class="visually-hidden">(current)</span></a
                 >
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link active" href="logout" aria-current="page"
                     >Logout <span class="visually-hidden">(current)</span></a

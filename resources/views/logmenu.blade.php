@@ -1,7 +1,7 @@
 <nav
     class="navbar navbar-expand-sm navbar-dark bg-primary"
    >
-    <a class="navbar-brand" href="#">Comercializadora</a>
+    <a class="navbar-brand" href="#"></a>
     
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
@@ -15,7 +15,7 @@
                     >Register <span class="visually-hidden">(current)</span></a
                 >
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link active" href="acercade" aria-current="page"
                     >Acerca de <span class="visually-hidden">(current)</span></a
                 >
@@ -29,7 +29,7 @@
                 <a class="nav-link active" href="ayuda" aria-current="page"
                     >Ayuda <span class="visually-hidden">(current)</span></a
                 >
-            </li>
+            </li> --}}
             
         </ul>
         <form class="d-flex my-2 my-lg-0">

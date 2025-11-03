@@ -4,8 +4,8 @@
 @endsection
 @section('contenido2')
 <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
-    <h3>Sistema web que permite gestionar de forma eficiente el registro, control y 
-        seguimiento de productos, clientes, proveedores y ventas.</h3>
+    <h3>EXAMEN PRACTICO UNIDAD 1 DE PROGRAMACION WEB II</h3>
+    <h4>Ezequiel Mancilla Martinez - 22430208</h4>
 </div>
 @endsection 
 
