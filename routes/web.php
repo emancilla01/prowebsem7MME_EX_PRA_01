@@ -31,6 +31,44 @@ Route::get('ayuda',function() {
     return view('ayuda');
 })->name('ayuda');
 
+Route::get('country',function() {
+    $country = DB::table('country')
+        ->select('country_id as CountryId', 'country as CountryName')
+        ->paginate(5);
+    return view('country',['country'=>$country]);
+})->name('country');
+
+Route::get('city', function () {
+    $city = DB::table('city')
+        ->select('city_id as CityId', 'city as CityName', 'country_id as CountryId')
+        ->paginate(5);
+    return view('city', ['city' => $city]);
+})->name('city');
+
+Route::get('category', function () {
+    $category = DB::table('category')
+        ->select('category_id as CategoryId', 'name as CategoryName')
+        ->paginate(5);
+    return view('category', ['category' => $category]);
+})->name('category');
+
+// Filtered city lists for Menu 3
+Route::get('city/mexico', function () {
+    $city = DB::table('city')
+        ->select('city_id as CityId', 'city as CityName', 'country_id as CountryId')
+        ->where('country_id', 60)
+        ->paginate(5);
+    return view('city', ['city' => $city]);
+})->name('city.mexico');
+
+Route::get('city/usa', function () {
+    $city = DB::table('city')
+        ->select('city_id as CityId', 'city as CityName', 'country_id as CountryId')
+        ->where('country_id', 103)
+        ->paginate(5);
+    return view('city', ['city' => $city]);
+})->name('city.usa');
+
 // original
 // Route::get('/', function () {
 //     return Inertia::render('Welcome');

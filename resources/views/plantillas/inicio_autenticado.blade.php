@@ -67,7 +67,7 @@
                 @yield('menu2')
             </div>
         </div> --}}
-    <div class="container content-with-rightbar">
+    <div class="">
         <div class="row">
             {{-- Left column: Menu1, Content, Menu3 stacked --}}
             <div class="col-12 col-md-9">
@@ -91,14 +91,16 @@
                     <div class="card menu3-card">
                         <div class="card-body">
                             <div class="container-fluid justify-content-center">
-            <span class="navbar-text text-center w-100">
-                <a href="#">Ciudades de Mexico</a>
-                <a href="#"> - Ciudades de Estados Unidos</a>
-                
-            </span>
-        </div>
-                        </div>
-                        
+                                <span class="navbar-text text-center w-100">
+                                    <a href="{{ route('city.mexico') }}">Ciudades de Mexico</a>
+                                        <a href="{{ route('city.usa') }}"> - Ciudades de Estados Unidos</a> <br>      
+                                    <?php
+                                    echo auth()->user()->name . "<br>";
+                                    echo auth()->user()->email;
+                                    ?>          
+                                </span>                                
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -110,9 +112,9 @@
                         {{-- <h5 class="card-title">Menú 2</h5> --}}
 
                         <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">Country</a>
-                            <a href="#" class="list-group-item list-group-item-action">City</a>
-                            <a href="#" class="list-group-item list-group-item-action">Category</a>
+                            <a href="{{ route('country') }}" class="list-group-item list-group-item-action">Country</a>
+                            <a href="{{ route('city') }}" class="list-group-item list-group-item-action">City</a>
+                            <a href="{{ route('category') }}" class="list-group-item list-group-item-action">Category</a>
                         </div>
                     </div>
                 </div>
