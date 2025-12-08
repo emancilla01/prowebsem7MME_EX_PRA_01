@@ -67,6 +67,9 @@
                 @yield('menu2')
             </div>
         </div> --}}
+
+
+
     <div class="">
         <div class="row">
             {{-- Left column: Menu1, Content, Menu3 stacked --}}
@@ -77,7 +80,7 @@
                     </div>
                     @yield('menu2')
                 </div>
-
+<div>
                 <div class="mb-3">
                     <div class="card flex-fill menu-content-card" style="min-height: 320px;">
                         <div class="card-body">
@@ -86,7 +89,21 @@
                         </div>
                     </div>
                 </div>
+                
+            <aside class="col-12 col-md-3 right-sidebar">
+                <div class="card menu2-card">
+                    <div class="card-body">
+                        {{-- <h5 class="card-title">Menú 2</h5> --}}
 
+                        <div class="list-group">
+                            <a href="{{ route('country') }}" class="list-group-item list-group-item-action">Country</a>
+                            <a href="{{ route('city') }}" class="list-group-item list-group-item-action">City</a>
+                            <a href="{{ route('category') }}" class="list-group-item list-group-item-action">Category</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            </div>
                 <div class="mb-3">
                     <div class="card menu3-card">
                         <div class="card-body">
@@ -106,19 +123,7 @@
             </div>
 
             {{-- Right column: Menu2, in flow, does NOT overlay left column --}}
-            <aside class="col-12 col-md-3 right-sidebar">
-                <div class="card menu2-card">
-                    <div class="card-body">
-                        {{-- <h5 class="card-title">Menú 2</h5> --}}
-
-                        <div class="list-group">
-                            <a href="{{ route('country') }}" class="list-group-item list-group-item-action">Country</a>
-                            <a href="{{ route('city') }}" class="list-group-item list-group-item-action">City</a>
-                            <a href="{{ route('category') }}" class="list-group-item list-group-item-action">Category</a>
-                        </div>
-                    </div>
-                </div>
-            </aside>
+            
         </div>
 
         {{-- <nav class="navbar fixed-bottom navbar-dark bg-primary">
