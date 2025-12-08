@@ -64,7 +64,7 @@
     
     
 
-<div class="container content-with-rightbar">
+<div class="">
         <div class="row">
             {{-- Left column: Menu1, Content, Menu3 stacked --}}
             <div class="col-12 col-md-9">
